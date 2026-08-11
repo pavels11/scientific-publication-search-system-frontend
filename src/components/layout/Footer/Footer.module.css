@@ -1,0 +1,28 @@
+.footer {
+  margin-top: auto;
+
+  background-color: #22262b;
+  background-color: #050c42;
+  background-color: #09156e;
+
+  border-top: 3px solid #6f2828;
+}
+
+.container {
+  max-width: 1180px;
+
+  margin: 0 auto;
+
+  padding: 22px 24px;
+}
+
+.text {
+  text-align: center;
+
+  color: #9aa0a8;
+  color: #eef0f2;
+  font-size: 14px;
+
+  font-family: Georgia, 'Times New Roman', serif;
+  letter-spacing: 0.01em;
+}

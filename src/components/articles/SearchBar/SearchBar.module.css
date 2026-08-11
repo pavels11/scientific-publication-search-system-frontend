@@ -1,0 +1,83 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.inputRow {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.input {
+  flex: 1;
+  min-width: 260px;
+
+  border: 1px solid #c9bca1;
+  border-radius: 4px;
+
+  padding: 13px 16px;
+
+  font-size: 15px;
+  background: #fffdf8;
+  color: #1c1812;
+
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.input::placeholder {
+  color: #9a8f78;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #6f2828;
+  box-shadow: 0 0 0 3px rgba(111, 40, 40, 0.12);
+}
+
+.searchButton,
+.clearButton {
+  border: 1px solid transparent;
+  border-radius: 4px;
+
+  padding: 13px 20px;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background 0.15s ease,
+    color 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.searchButton {
+  background: #6f2828;
+  color: #f6efe6;
+}
+
+.searchButton:hover {
+  background: #5c2121;
+}
+
+.clearButton {
+  background: transparent;
+  border-color: #b9ad95;
+  color: #423b2e;
+}
+
+.clearButton:hover {
+  border-color: #6f2828;
+  color: #6f2828;
+}
+
+.searchButton:disabled,
+.clearButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

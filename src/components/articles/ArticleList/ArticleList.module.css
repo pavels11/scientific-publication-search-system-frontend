@@ -1,0 +1,22 @@
+.list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.state,
+.error {
+  padding: 26px 22px;
+
+  background: #fcfaf4;
+  border: 1px solid #c9bca1;
+
+  font-size: 15px;
+  color: #423b2e;
+}
+
+.error {
+  color: #6f2828;
+  background: #f4e2dc;
+  border-color: #cb9a8d;
+}

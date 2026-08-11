@@ -1,0 +1,44 @@
+.page {
+  display: flex;
+  justify-content: center;
+
+  padding: 40px 20px 72px;
+}
+
+.card {
+  width: 100%;
+  max-width: 680px;
+
+  background-color: #fcfaf4;
+
+  border: 1px solid #c9bca1;
+  border-top: 3px solid #6f2828;
+
+  padding: 32px 34px;
+}
+
+.header {
+  margin-bottom: 28px;
+
+  padding-bottom: 16px;
+  border-bottom: 1px solid #d8cfbc;
+}
+
+.title {
+  margin: 0 0 6px;
+
+  font-size: 28px;
+  font-weight: 700;
+
+  color: #1c1812;
+
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+.username {
+  margin: 0;
+
+  color: #877c64;
+
+  font-size: 15px;
+}

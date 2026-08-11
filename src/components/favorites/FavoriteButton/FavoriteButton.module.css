@@ -1,0 +1,59 @@
+.button,
+.loginLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 4px;
+  padding: 9px 16px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition:
+    background-color 0.15s ease,
+    color 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.button {
+  border: 1px solid #b9ad95;
+  background: transparent;
+  color: #423b2e;
+  cursor: pointer;
+}
+
+.button:hover {
+  border-color: #6f2828;
+  color: #6f2828;
+}
+
+.active {
+  background: #ede0dd;
+  border-color: #c79f97;
+  color: #6f2828;
+}
+
+.active:hover {
+  background: #e4d0cc;
+  border-color: #6f2828;
+  color: #6f2828;
+}
+
+.loginLink {
+  border: 1px solid #b9ad95;
+  background: transparent;
+  color: #5e5648;
+}
+
+.loginLink:hover {
+  border-color: #6f2828;
+  color: #6f2828;
+}
+
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

@@ -1,0 +1,179 @@
+.page {
+  display: flex;
+  flex-direction: column;
+
+  gap: 48px;
+
+  max-width: 1180px;
+  margin: 0 auto;
+
+  padding: 40px 20px 72px;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 360px;
+
+  border: 1px solid #c9bca1;
+  border-top: 4px solid #6f2828;
+
+  padding: 56px 48px;
+
+  background: #fcfaf4;
+}
+
+.heroContent {
+  max-width: 740px;
+
+  text-align: center;
+}
+
+.title {
+  margin: 0 0 22px;
+
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.18;
+
+  color: #1c1812;
+
+  font-family: Georgia, 'Times New Roman', serif;
+  letter-spacing: -0.01em;
+}
+
+.description {
+  margin: 0 auto 32px;
+
+  max-width: 620px;
+
+  font-size: 17px;
+  line-height: 1.75;
+
+  color: #5e5648;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+
+  flex-wrap: wrap;
+}
+
+.primaryButton,
+.secondaryButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 200px;
+
+  border-radius: 4px;
+
+  padding: 13px 24px;
+
+  text-decoration: none;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  transition:
+    background-color 0.15s ease,
+    color 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.primaryButton {
+  background-color: #6f2828;
+  border: 1px solid #6f2828;
+
+  color: #f6efe6;
+}
+
+.primaryButton:hover {
+  background-color: #5c2121;
+  border-color: #5c2121;
+}
+
+.secondaryButton {
+  border: 1px solid #b9ad95;
+
+  background-color: transparent;
+
+  color: #423b2e;
+}
+
+.secondaryButton:hover {
+  border-color: #6f2828;
+  color: #6f2828;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+
+  gap: 20px;
+}
+
+.featureCard {
+  border: 1px solid #c9bca1;
+  border-left: 3px solid #6f2828;
+
+  padding: 26px 28px;
+
+  background-color: #fcfaf4;
+}
+
+.featureCard h2 {
+  margin: 0 0 12px;
+
+  font-size: 19px;
+  font-weight: 700;
+
+  color: #1c1812;
+
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+.featureCard p {
+  margin: 0;
+
+  font-size: 15px;
+  line-height: 1.7;
+
+  color: #5e5648;
+}
+
+@media (max-width: 768px) {
+  .page {
+    gap: 32px;
+    padding: 24px 14px 48px;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 36px 22px;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .primaryButton,
+  .secondaryButton {
+    width: 100%;
+    max-width: 320px;
+  }
+}

@@ -1,0 +1,114 @@
+.list {
+  display: flex;
+  flex-direction: column;
+
+  gap: 12px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  border: 1px solid #c9bca1;
+  border-radius: 4px;
+
+  padding: 13px 16px;
+
+  background-color: #fcfaf4;
+
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.active {
+  border-color: #6f2828;
+
+  box-shadow: 0 0 0 2px rgba(111, 40, 40, 0.12);
+}
+
+.mainButton {
+  flex: 1;
+
+  display: flex;
+  align-items: center;
+
+  min-width: 0;
+
+  border: none;
+  background: transparent;
+
+  padding: 0;
+
+  cursor: pointer;
+
+  text-align: left;
+}
+
+.name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  color: #1c1812;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  flex-shrink: 0;
+}
+
+.editButton,
+.deleteButton {
+  border: 1px solid #b9ad95;
+  border-radius: 4px;
+
+  padding: 7px 14px;
+
+  background-color: transparent;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.15s ease,
+    color 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.editButton {
+  color: #423b2e;
+}
+
+.editButton:hover {
+  border-color: #6f2828;
+  color: #6f2828;
+}
+
+.deleteButton {
+  color: #8a3a34;
+  border-color: #cda99f;
+}
+
+.deleteButton:hover {
+  background-color: #8a3a34;
+  border-color: #8a3a34;
+  color: #f6efe6;
+}
+
+.empty {
+  color: #877c64;
+
+  font-size: 14px;
+}

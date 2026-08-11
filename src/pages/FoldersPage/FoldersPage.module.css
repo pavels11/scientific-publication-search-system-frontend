@@ -1,0 +1,95 @@
+.page {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+
+  gap: 32px;
+
+  max-width: 1180px;
+  margin: 0 auto;
+
+  padding: 40px 20px 72px;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.title {
+  margin: 0;
+
+  font-size: 26px;
+  font-weight: 700;
+
+  color: #1c1812;
+
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+.content {
+  min-width: 0;
+}
+
+.articles {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.state {
+  padding: 22px 22px;
+
+  background: #fcfaf4;
+  border: 1px solid #c9bca1;
+
+  font-size: 15px;
+  color: #423b2e;
+}
+
+.error {
+  padding: 16px 20px;
+
+  border: 1px solid #cb9a8d;
+  background: #f4e2dc;
+
+  color: #6f2828;
+
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.removeButton {
+  border: 1px solid #cda99f;
+  border-radius: 4px;
+
+  padding: 9px 16px;
+
+  background-color: transparent;
+  color: #8a3a34;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.15s ease,
+    color 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.removeButton:hover {
+  background-color: #8a3a34;
+  border-color: #8a3a34;
+  color: #f6efe6;
+}
+
+@media (max-width: 860px) {
+  .page {
+    grid-template-columns: 1fr;
+    gap: 24px;
+
+    padding: 24px 14px 48px;
+  }
+}
