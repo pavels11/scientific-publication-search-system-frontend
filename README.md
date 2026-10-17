@@ -1,3 +1,5 @@
+Live Demo: https://pavels11.github.io/scientific-publication-search-system-frontend/
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
