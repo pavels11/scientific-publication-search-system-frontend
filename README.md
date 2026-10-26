@@ -1,18 +1,24 @@
-Live Demo: https://pavels11.github.io/scientific-publication-search-system-frontend/
+# Scientific Publication Search and Analysis — Frontend
 
-# React + Vite
+Web application for searching and analyzing scientific publications, built with React and JavaScript.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Live Demo:** https://pavels11.github.io/scientific-publication-search-system-frontend/
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Search for scientific publications
+- Filter, sort, and paginate search results
+- View publication details, abstracts, authors, publication dates, and PDF links
+- View automatically generated summaries and their Russian translations
+- Manage favorite publications
+- Organize publications into personal collections and folders
+- User registration and token-based authentication
 
-## React Compiler
+## Technologies
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- JavaScript
+- React
+- React Router DOM
+- Axios
+- Vite
+- CSS Modules
